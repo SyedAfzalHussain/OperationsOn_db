@@ -1,0 +1,65 @@
+// const { MongoClient } = require('mongodb');
+// const express = require('express')
+// const app = express()
+
+// const url = 'mongodb://localhost:27017';
+// const client = new MongoClient(url);
+// const database = "Blog"
+
+// app.use(express.json());
+
+// app.get('/', async function(req,res){
+//     let allData = await client.connect();
+//     let Dbase = allData.db(database);
+//     let content = Dbase.collection('carDetails');
+//     let data = await content.find().toArray();
+//     console.log(data)
+//     res.send(data)
+// })
+// async function getData (){
+//     let allData = await client.connect();
+//     let Dbase = allData.db(database);
+//     let content = Dbase.collection('carDetails');
+    
+
+    //Collection Deletion ...
+    // let result = await content.deleteOne(
+    //     {"model": "Jeep"}
+    //     )
+    // console.log(result)
+
+    // Data Updating ...
+    // let result = await content.updateOne(
+    //     {"model": "mercedez"},{
+    //     $set : {"model": "Jeep"}}
+    //     )
+    // console.log(result)
+
+
+    // Data Inserting ...
+    // let result = await content.insert({
+    //     "model" : "Jeep",
+    //     "Price" : 3230
+    // })
+    // console.log(result)
+
+    //Data Searching and displaying the required data
+    // let result = await content.findOne(
+    //     {"model": "Jeep"}
+    //     )
+    // console.log(result)
+
+    //Displaying Data ...
+    // let db = await content.find({}).toArray()
+    // console.log(content);
+
+
+// }
+// getData();
+
+// module.exports = getData;
+// app.listen(4000, () => {
+//     console.log(`Example app listening at http://localhost:${4000}`)
+//   })
+
+
